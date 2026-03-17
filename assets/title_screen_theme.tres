@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://cycnurjyxl17j"]
+
+[ext_resource type="FontFile" uid="uid://bl8kgai36ej6s" path="res://assets/SankofaDisplay-Regular.ttf" id="1_ya4uy"]
+
+[resource]
+default_font = ExtResource("1_ya4uy")
+default_font_size = 128

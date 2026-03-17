@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://cly2tuboxvx2y"]
+
+[ext_resource type="Theme" uid="uid://cycnurjyxl17j" path="res://assets/title_screen_theme.tres" id="1_fgkus"]
+[ext_resource type="Script" uid="uid://lv6je5f3lnxh" path="res://scripts/menu.gd" id="2_sa3yf"]
+
+[node name="TitleScreen" type="Control" unique_id=2004309499]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="." unique_id=440725712]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.6401941, 0.19542295, 0.19784957, 1)
+
+[node name="Title" type="Label" parent="." unique_id=2065545168]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -279.0
+offset_right = 279.0
+offset_bottom = 154.0
+grow_horizontal = 2
+theme = ExtResource("1_fgkus")
+text = "Olá Mundo!"
+horizontal_alignment = 1
+
+[node name="Menu" type="Panel" parent="." unique_id=330342743]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -415.0
+offset_top = -279.0
+offset_right = 415.0
+offset_bottom = 279.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fgkus")
+script = ExtResource("2_sa3yf")
+
+[node name="Iniciar" type="Button" parent="Menu" unique_id=1918355062]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -191.5
+offset_top = 83.0
+offset_right = 191.5
+offset_bottom = 245.0
+grow_horizontal = 2
+text = "Iniciar"
+
+[node name="Sair" type="Button" parent="Menu" unique_id=2096255117]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -111.5
+offset_top = -235.0
+offset_right = 111.5
+offset_bottom = -73.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Sair"
+
+[connection signal="pressed" from="Menu/Iniciar" to="Menu" method="_on_iniciar_pressed"]
+[connection signal="pressed" from="Menu/Sair" to="Menu" method="_on_sair_pressed"]
