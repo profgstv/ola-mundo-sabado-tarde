@@ -1,0 +1,5 @@
+Fabrica-Assets
+
+Made by profgstv at Fábrica de Cultura 4.0 - São Bernardo do Campo - SP as an educational project with gamedev students.
+
+Published on itch.io community under Creative Commons Zero License (CC0).
