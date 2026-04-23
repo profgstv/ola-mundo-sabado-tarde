@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://mafeu63f4ktv"]
+
+[ext_resource type="PackedScene" uid="uid://hen8mcaxn6w8" path="res://scenes/objetos.tscn" id="1_eov6a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2ka1"]
+size = Vector2(20, 26)
+
+[node name="Arvore" unique_id=1300792805 instance=ExtResource("1_eov6a")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1309476924]
+position = Vector2(0, -32)
+region_rect = Rect2(192, 0, 128, 192)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=2039079015]
+position = Vector2(0, 18)
+shape = SubResource("RectangleShape2D_j2ka1")

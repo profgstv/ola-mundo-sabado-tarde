@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774708496
+::res://::1776532588
 icon.svg::CompressedTexture2D::5120425789171251176::1774110765::1774111016::1::::<><><>0<>0<>69fd5a999d72f0406fd40b5ba13cd9d5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1774718668
 Modak-Regular.ttf::FontFile::833534007504393463::1774110765::1774111016::1::::<><><>0<>0<>1a07c6a984fad47a6f6e642e69dd3a8e<>res://.godot/imported/Modak-Regular.ttf-b8caa8788e54d10a69dfcb9b2c73abff.fontdata::
@@ -35,7 +35,7 @@ spellcast.png::CompressedTexture2D::5934659109872375481::1774115703::1774115703:
 thrust.png::CompressedTexture2D::3547048318239919730::1774115703::1774115703::1::::<><><>0<>0<>c8afda01aec74f04bb9fef715364c9b5<>res://.godot/imported/thrust.png-82533742e39359ea365bf04603d5e230.ctex::
 walk.png::CompressedTexture2D::9138580117687157565::1774115703::1774115703::1::::<><><>0<>0<>406a22f8498767648fba146115589526<>res://.godot/imported/walk.png-b132b0132246e610adef20a9b504c022.ctex::
 watering.png::CompressedTexture2D::1348999778952087468::1774115703::1774115703::1::::<><><>0<>0<>2d809e5c4d270e1034d20d6a5aecb56b<>res://.godot/imported/watering.png-669be5f49fdf4d2573a6a2666d46c83e.ctex::
-::res://assets/tiles/::1774718681
+::res://assets/tiles/::1774718682
 CREDITS.txt::TextFile::-1::1774718681::0::1::::<><><>0<>0<><>::
 fcsbc_building.png::CompressedTexture2D::123206247459369944::1774718681::1774718681::1::::<><><>0<>0<>caf530b7d2331ee1518332f42819074c<>res://.godot/imported/fcsbc_building.png-edb21048c1d421326d88bc4a70bb027f.ctex::
 fcsbc_gates_and_fences.png::CompressedTexture2D::7950282348964243244::1774718681::1774718681::1::::<><><>0<>0<>0267e41fd7eceb14f4e1b3dfbb234022<>res://.godot/imported/fcsbc_gates_and_fences.png-350a349c21112a25cbb1eb0a04423361.ctex::
@@ -44,8 +44,10 @@ fcsbc_objects.png::CompressedTexture2D::251338608413900961::1774718681::17747186
 fcsbc_terrain.png::CompressedTexture2D::2988584519648661047::1774718681::1774718681::1::::<><><>0<>0<>8c8ed1c0ac5faadb7401f3ea05684e21<>res://.godot/imported/fcsbc_terrain.png-a3857a32da24ff1712d52c7e1414c21f.ctex::
 LICENSE.txt::TextFile::-1::1774718681::0::1::::<><><>0<>0<><>::
 screenshot.png::CompressedTexture2D::2047655932030030219::1774718681::1774718682::1::::<><><>0<>0<>f73381508838c05651659502d3b8dc92<>res://.godot/imported/screenshot.png-9c12955c2be08c8db833f235b6bf119e.ctex::
-::res://scenes/::1774123194
+::res://scenes/::1774727556
+level01.tscn::PackedScene::5077008749831598906::1774727556::0::1::::<><><>0<>0<><>::uid://47xoj5etfor2::::res://scenes/terrain.tscn<>uid://bgpiv43rdaywh::::res://scenes/player.tscn<>uid://dljf8u8knb7n1::::res://assets/tiles/fcsbc_gates_and_fences.png
 player.tscn::PackedScene::2839044216654444067::1774123194::0::1::::<><><>0<>0<><>::uid://dd87c8p025t0x::::res://scripts/player.gd<>uid://chwcjgduktcbp::::res://assets/sprites/player/standard/idle.png<>uid://bbc20li6f1115::::res://assets/sprites/player/standard/run.png
+terrain.tscn::PackedScene::2102958564842778349::1774721752::0::1::::<><><>0<>0<><>::uid://bitxsyi7utcgl::::res://assets/tiles/fcsbc_terrain.png
 title_screen.tscn::PackedScene::5596138055070372386::1774110765::0::1::::<><><>0<>0<><>::uid://cycnurjyxl17j::::res://assets/title_screen_theme.tres<>uid://lv6je5f3lnxh::::res://scripts/menu.gd
 ::res://scripts/::1774123194
 menu.gd::GDScript::817327768477091713::1774110765::0::1::::<>Panel<><>0<>0<><>::

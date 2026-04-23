@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cey54480f5ou6"]
+
+[ext_resource type="PackedScene" uid="uid://hen8mcaxn6w8" path="res://scenes/objetos.tscn" id="1_pid7l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5r771"]
+size = Vector2(127, 62)
+
+[node name="Guarita" unique_id=1300792805 instance=ExtResource("1_pid7l")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1309476924]
+position = Vector2(0, -34)
+region_rect = Rect2(0, 0, 128, 128)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=2039079015]
+position = Vector2(0.5, -2)
+shape = SubResource("RectangleShape2D_5r771")

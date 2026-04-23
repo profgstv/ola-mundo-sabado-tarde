@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://e1u1a8043ybt"]
+
+[ext_resource type="PackedScene" uid="uid://hen8mcaxn6w8" path="res://scenes/objetos.tscn" id="1_hbuc1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0anrp"]
+size = Vector2(21, 29)
+
+[node name="Poste" unique_id=1300792805 instance=ExtResource("1_hbuc1")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1309476924]
+position = Vector2(0, -46)
+region_rect = Rect2(128, 0, 64, 192)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=2039079015]
+position = Vector2(0.5, 29.5)
+shape = SubResource("RectangleShape2D_0anrp")
