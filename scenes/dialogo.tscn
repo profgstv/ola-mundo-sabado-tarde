@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://cpwrw3wei681s"]
 
+[ext_resource type="Script" uid="uid://cmiffwsyytv26" path="res://scripts/dialogo.gd" id="1_hbhh0"]
 [ext_resource type="Theme" uid="uid://cycnurjyxl17j" path="res://assets/title_screen_theme.tres" id="1_qv0hs"]
+[ext_resource type="FontFile" uid="uid://bl8kgai36ej6s" path="res://assets/SankofaDisplay-Regular.ttf" id="3_tnegg"]
+
+[sub_resource type="Theme" id="Theme_f60r7"]
+default_font = ExtResource("3_tnegg")
+default_font_size = 32
 
 [sub_resource type="Animation" id="Animation_hbhh0"]
 length = 0.001
@@ -15,6 +21,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="Animation" id="Animation_qv0hs"]
+resource_name = "mostrar_botoes"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/HBoxContainer:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_tnegg"]
@@ -32,14 +53,40 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(1e-05, 1e-05), Vector2(1, 1)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel/MensagemLabel:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/HBoxContainer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f60r7"]
 _data = {
 &"RESET": SubResource("Animation_hbhh0"),
+&"mostrar_botoes": SubResource("Animation_qv0hs"),
 &"start": SubResource("Animation_tnegg")
 }
 
 [node name="Dialogo" type="CanvasLayer" unique_id=485822368]
+script = ExtResource("1_hbhh0")
 
 [node name="Panel" type="Panel" parent="." unique_id=861025311]
 anchors_preset = 8
@@ -57,7 +104,7 @@ scale = Vector2(1e-05, 1e-05)
 pivot_offset_ratio = Vector2(0.5, 0.5)
 theme = ExtResource("1_qv0hs")
 
-[node name="Label" type="Label" parent="Panel" unique_id=115657386]
+[node name="TituloLabel" type="Label" parent="Panel" unique_id=115657386]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -70,7 +117,7 @@ theme_override_font_sizes/font_size = 64
 text = "Título"
 horizontal_alignment = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel" unique_id=842297241]
+[node name="MensagemLabel" type="RichTextLabel" parent="Panel" unique_id=842297241]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -88,6 +135,8 @@ theme_override_font_sizes/bold_font_size = 32
 theme_override_font_sizes/bold_italics_font_size = 32
 theme_override_font_sizes/italics_font_size = 32
 text = "Mensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do DialogoMensagem do Dialogo"
+visible_characters = 0
+visible_ratio = 0.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel" unique_id=1781323514]
 layout_mode = 1
@@ -101,6 +150,8 @@ offset_right = -21.0
 offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 0
+theme = SubResource("Theme_f60r7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2049081736]
 libraries/ = SubResource("AnimationLibrary_f60r7")
+autoplay = &"start"

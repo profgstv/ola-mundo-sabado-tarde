@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777144154
+::res://::1777740392
 icon.svg::CompressedTexture2D::5120425789171251176::1774110765::1774111016::1::::<><><>0<>0<>69fd5a999d72f0406fd40b5ba13cd9d5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1774718668
 Modak-Regular.ttf::FontFile::833534007504393463::1774110765::1774111016::1::::<><><>0<>0<>1a07c6a984fad47a6f6e642e69dd3a8e<>res://.godot/imported/Modak-Regular.ttf-b8caa8788e54d10a69dfcb9b2c73abff.fontdata::
@@ -44,8 +44,9 @@ fcsbc_objects.png::CompressedTexture2D::251338608413900961::1774718681::17747186
 fcsbc_terrain.png::CompressedTexture2D::2988584519648661047::1774718681::1774718681::1::::<><><>0<>0<>8c8ed1c0ac5faadb7401f3ea05684e21<>res://.godot/imported/fcsbc_terrain.png-a3857a32da24ff1712d52c7e1414c21f.ctex::
 LICENSE.txt::TextFile::-1::1774718681::0::1::::<><><>0<>0<><>::
 screenshot.png::CompressedTexture2D::2047655932030030219::1774718681::1774718682::1::::<><><>0<>0<>f73381508838c05651659502d3b8dc92<>res://.godot/imported/screenshot.png-9c12955c2be08c8db833f235b6bf119e.ctex::
-::res://scenes/::1776540159
+::res://scenes/::1777146522
 arvore.tscn::PackedScene::842577951431805883::1776540046::0::1::::<><><>0<>0<><>::uid://hen8mcaxn6w8::::res://scenes/objetos.tscn
+dialogo.tscn::PackedScene::5872163313722131586::1777146522::0::1::::<><><>0<>0<><>::uid://cycnurjyxl17j::::res://assets/title_screen_theme.tres
 fabrica_predio.tscn::PackedScene::6112587630947709406::1776536115::0::1::::<><><>0<>0<><>::uid://b0xgomlgk0oi::::res://assets/tiles/fcsbc_building.png<>uid://de516s0420457::::res://assets/tiles/fcsbc_logo.png
 guarita.tscn::PackedScene::5105016681141465375::1776540159::0::1::::<><><>0<>0<><>::uid://hen8mcaxn6w8::::res://scenes/objetos.tscn
 level01.tscn::PackedScene::5077008749831598906::1776536672::0::1::::<><><>0<>0<><>::uid://47xoj5etfor2::::res://scenes/terrain.tscn<>uid://bgpiv43rdaywh::::res://scenes/player.tscn<>uid://dljf8u8knb7n1::::res://assets/tiles/fcsbc_gates_and_fences.png<>uid://ctc8ops51g535::::res://scenes/fabrica_predio.tscn
