@@ -155,3 +155,5 @@ theme = SubResource("Theme_f60r7")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2049081736]
 libraries/ = SubResource("AnimationLibrary_f60r7")
 autoplay = &"start"
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
