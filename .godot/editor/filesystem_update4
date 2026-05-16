@@ -1,2 +1,4 @@
-res://scripts/dialogo.gd
-res://scenes/dialogo.tscn
+res://scenes/level01.tscn
+res://scripts/global.gd
+res://scripts/level_01.gd
+res://scripts/player.gd
